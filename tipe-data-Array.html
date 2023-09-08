@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script> 
+
+        /*
+        ------------------------------------------------------------------------------------------------
+        macam-macam operasi array
+        ------------------------------------------------------------------------------------------------
+        array.push(value) menambah data ke array
+        array.length untuk mendapatkan panjang dari array tsb
+        array[index]  mendapat data pada posisi index
+        array[index] = value   mengubah data pada posisi index
+        delete array[index]  menghapus data pada posisi index, namun posisi index tidak bergeser
+        ------------------------------------------------------------------------------------------------
+        */
+        let iniArray = [];
+
+        let arrayNama = ["faishal", "tsaqief", "muhammad"];
+        arrayNama[0] = "muhammad"
+
+        document.writeln(`${arrayNama}`)
+
+
+
+        const names = [];
+        names.push("Muhammad",  "faishal");
+        names.push("tsaqief")
+        console.table(names);
+
+        console.info(names);
+        names[0] = "programmer";
+        names[2] = " pemula";
+
+        console.table(names);
+        delete names[2];
+
+        console.table(names);
+
+        names.push("Muhammad");
+        console.table(names)
+
+        names[2] = "tsaqief";
+        console.table(names);
+
+        arrayBaru = ["apel", "pisang"];
+        names.push(arrayBaru);
+        console.table(names);
+        
+        
+
+
+
+    </script>
+    
+</body>
+</html>

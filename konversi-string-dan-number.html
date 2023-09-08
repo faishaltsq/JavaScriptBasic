@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>konversi string dan number</title>
+</head>
+<body>
+    <!-- 
+        parseInt(string) konversi string ke number (bilangan bulat)
+        parseFloat(string) konversi string ke number float
+        Number(string) konversi string ke number (bulat atau float)
+        number.toString() konversi number ke string
+     -->
+    <script>
+            const value1 = "1";
+            const value2 = 1;
+            const sum = value1 + value2;
+
+            document.writeln(`<p>${sum}</p>`);
+            document.writeln(parseInt("10"));
+            document.writeln(parseFloat("10.9"));
+
+            const a = 1;
+            const b = 1;
+
+            const total = a.toString() + b.toString();
+            document.writeln(`<p>${total}</p>`);
+
+
+            document.writeln(`<p>${parseInt("1salah")}</p>`);
+            document.writeln(`<p>${parseFloat("10.9benar")}</p>`);
+
+
+            document.writeln(`<p>${Number("1salah")}</p>`)
+
+            const first = Number("salah");
+            const totalNumber = first + 100;
+            document.writeln(`<p>${totalNumber}</p>`);
+            
+            <!-- cara mengecek NaN pada variabel menggunakan isNaN() -->
+            document.writeln(`<p>${isNaN(first)}</p>`);
+            
+
+
+
+
+
+            
+
+
+
+
+
+    </script>
+</body>
+</html>

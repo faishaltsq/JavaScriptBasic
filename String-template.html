@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String template</title>
+</head>
+<body>
+
+    <script>
+        const name = "faishal tsaqief";
+        const template = `Name : ${name}`;
+        console.info(template);
+
+        const nilai = 70;
+        const template2 = `name : ${name} nilai: ${nilai >= 70}`;
+        console.log(template2);
+
+        const multiline = `
+        halo nama saya muhammad faishal tsaqief
+        ini adalah multiline untuk membuat tulisan panjang
+        pada banyak line kode`;
+
+        document.writeln("<pre>");
+        document.writeln(multiline);
+        document.writeln("</pre>");
+
+
+    </script>
+    
+</body>
+</html>
