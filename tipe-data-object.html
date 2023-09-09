@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tipe data objek</title>
+</head>
+<body>
+    <script>
+        //mengubah objek pada properties
+        const orang = {};
+
+        orang["nama"] = "faishal";
+        orang["umur"] = 19;
+        orang["alamat"] = "jalan raya";
+        orang["hobi"] = "makan";
+        console.table(orang);
+
+        orang.umur = 20;
+        orang.nama = "debby";
+        orang.hobi = "tidur";
+        console.table(orang);
+
+        delete orang.umur;
+        console.table(orang);
+
+        //membuat objek dengan properties
+        const nama2 = {
+            nama: "faishal",
+            umur: 19,
+            alamat: "indonesia",
+            hobi: "belajar"
+        };
+        //mengakses properties objek
+        console.info(`nama: ${nama2.nama}`);
+        console.info(`umur : ${nama2.umur}`);
+        console.info(`alamat :${nama2.alamat}`);
+        console.info(`hobi : ${nama2.hobi}`);
+        console.table(nama2);
+
+
+
+    </script>
+    
+</body>
+</html>
