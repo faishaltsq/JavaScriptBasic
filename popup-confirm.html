@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>popup confirm</title>
+</head>
+<body>
+    <script>
+        const masuk = confirm("Apakah anda yakin ingin masuk?");
+
+        if (masuk){
+            const nama = prompt("Siapa nama anda?");
+            alert(`Halo ${nama}, selamat datang!`);
+
+        }
+        else{
+            alert("selamat tinggal");
+        }
+    </script>
+</body>
+</html>

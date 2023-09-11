@@ -7,14 +7,16 @@
 </head>
 <body>
     <script>
-        const examValue = 75;
+        const examValue = 50;
 
         if (examValue > 80) {
-            document.writeln("Selamat anda mendapatkan nilai A");
+            document.writeln("<p> Selamat anda mendapatkan nilai A </p>");
+        } else if (examValue > 60) {
+            document.writeln("<p> Anda mendapatkan nilai C </p>");
+        } else{
+                document.writeln("<p> Belajar!!! </p>");
             }
-        else if (examValue < 80) {
-            document.writeln("Anda mendapatkan nilai C");
-        }
+        
     </script>
     
 </body>
