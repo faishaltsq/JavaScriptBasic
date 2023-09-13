@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optional chaining</title>
+</head>
+<body>
+    <script>
+
+        //optional chaining digunakan untuk mengecek apabila suatu atribut tidak ada didalam object
+
+        const person = {
+            firstName : "faishal",
+            lastName : "tsaqief",
+            address:{
+            }
+        }
+
+        let country = person?.address?.country;
+
+        document.writeln(`<p> ${country} </p>`);
+
+
+
+
+
+
+    </script>
+</body>
+</html>

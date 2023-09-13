@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator nullish coalescing</title>
+</head>
+<body>
+    <script>
+        let parameter;
+        let data = parameter
+
+        if(data === null || data === undefined){
+            data = "data default";
+        }
+
+        document.writeln(`<p> ${data} </p>`);
+
+        //nullish coalescing operator
+
+        data = parameter ?? "data default";
+        document.writeln(`<p> ${data} </p>`);
+    </script>
+</body>
+</html>

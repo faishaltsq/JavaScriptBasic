@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator ternary</title>
+</head>
+<body>
+    <script>
+
+        //tanpa menggunakan operator ternary (?)
+        const nilai = prompt("Masukan nilai anda : ");
+        let ucapan;
+
+        if (nilai >= 80) {
+            ucapan = "Selamat anda lulus dengan nilai A";
+        } else { 
+            ucapan = "silahkan coba lagi lain kali";
+        }
+
+        document.writeln(`<p> ${ucapan} </p>`);
+
+
+        //menggunakan operator ternary (?)
+        ucapan =  nilai >= 80 ? "Selamat anda lulus dengan nilai A" : "silahkan coba lagi lain kali";
+        document.writeln(`<p> ${ucapan} </p>`);
+
+
+
+
+    </script>
+</body>
+</html>

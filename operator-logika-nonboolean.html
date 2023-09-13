@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator logika non boolean</title>
+</head>
+<body>
+    <script>
+        
+        console.info("Operator logika non boolean");
+        console.info("Operator OR");
+        console.info("Hello "|| "");
+        console.info(0 || "NOL");
+        console.info(""|| []);
+        console.info(null || "NULL");
+        console.info(undefined || "UNDEFINED");
+        console.info(0 || false);
+
+        const person = {
+            firstName : "faishal",
+            lastName : "tsaqief"
+        }
+        const  name = person.firstName || person.lastName;
+        console.info(name);
+
+
+        console.info("Operator AND");
+        console.info("Hello "&& "");
+        console.info(0 && "NOL");
+        console.info(""&& []);
+        console.info(null && "NULL");
+        console.info(undefined && "UNDEFINED");
+
+
+
+
+    </script>
+</body>
+</html>
