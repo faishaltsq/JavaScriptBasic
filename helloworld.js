@@ -1,3 +1,6 @@
 
-let masukan = prompt("Masukan nama anda : ");
-alert("Hello " + masukan + ", Selamat datang di Javascript");
+
+
+const selamatDatang = prompt("Selamat datang di website ini, siapa nama anda?")
+
+alert(`Halo ${selamatDatang}, selamat datang di website ini`)
